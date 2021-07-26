@@ -30,6 +30,8 @@ void Widget::on_pushButton_4_clicked()
 
 void Widget::on_pushButton_2_clicked()
 {
+    //bouton enregistrer 
+    
     // L'opération consistant à créer le fichier texte se déroule en trois
     // étapes.
 
@@ -83,6 +85,7 @@ ui->Liste->addItem(nomDuFichier);// pour l'ajouter dans la liste
 
 void Widget::on_pushButton_clicked()
 {
+    //Bouton voir
     QString textEditStr= ui->Liste->currentItem()->text();// récupèrer la fiche selectionné  de la liste comme un  QString
 
     QString filename=FilesRootPath+ textEditStr;//pour récupèrer le chemain absolu de  la fiche à selectionner
@@ -101,6 +104,8 @@ void Widget::on_pushButton_clicked()
 
 void Widget::on_pushButton_3_clicked()
 {
+    //bouton nouveau
+    
     ui->textEdit->clear();
        ui->textEdit_2->clear();
           ui->textEdit_3->clear();
@@ -108,7 +113,7 @@ void Widget::on_pushButton_3_clicked()
 }
 void Widget::on_pushButton_5_clicked()
 {
-
+// boputon supprimer
     QString textEditStr= ui->Liste->currentItem()->text();// récupèrer la fiche selectionné de la liste
 
      if( !QFile::remove(FilesRootPath + textEditStr))// on supprime la fiche enregistré dans le dossier à l'aide de la methode remove()
