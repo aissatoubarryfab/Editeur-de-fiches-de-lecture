@@ -61,8 +61,6 @@ void Widget::on_pushButton_2_clicked()
 // on pourra  écrire dans le fichier texte (objet file) à travers le flux
 // out.
 
-// Le nom du flux est libre; c'est moi qui ait choisit de l'appeler
-// out pour output
 QTextStream out(&file);
 // pour recupéerer le contenue de chaque zone de text on utilise la methode toPlainText()  appliqué sur l'un des text edit
 out <<  ui->textEdit_2->toPlainText() << endl;
