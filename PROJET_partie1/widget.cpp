@@ -25,6 +25,7 @@ void Widget::on_pushButton_4_clicked()
 
 void Widget::on_pushButton_2_clicked()
 {
+    //bouton enregistrer
     // L'opération consistant à créer le fichier texte se déroule en trois
     // étapes.
 
@@ -75,6 +76,7 @@ file.close(); //  fermer fichier
 
 void Widget::on_pushButton_clicked()
 {
+    //bouton ouvrir
     // L'opération consistant ouvrrir  le fichier texte se déroule en trois
     // étapes.
 
@@ -122,8 +124,9 @@ void Widget::on_pushButton_clicked()
 
 void Widget::on_pushButton_3_clicked()
 {
+    //bouton nouveau
    ui->textEdit->clear();// pour effacer le text qui est dans le textEdit
-      ui->textEdit_2->clear();
-         ui->textEdit_3->clear();
+   ui->textEdit_2->clear();
+   ui->textEdit_3->clear();
 
 }
